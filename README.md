@@ -29,5 +29,9 @@ deque_queue # 선입 선출(FIFO: First In First Out)
 	#case 2:
 	dq_list.append() # 넣기
 	dq_list.popleft() # 빼기
+	
+OrderedDict # 순서가 있는 딕셔너리
 
+
+	od = OrderedDict() # OrderedDict을 선언
 		
