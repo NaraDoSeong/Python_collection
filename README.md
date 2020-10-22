@@ -41,3 +41,14 @@ defaultdict # 키에 기본 값을 지정
 	dfd = defaultdict(lambda: 0) # defaultdict 선언, 기본값은 0
 	dfd_list = defaultdict(list) # defaultdict 선언, 기본값은 []
 		
+Counter # 시퀀스 자료형의 데이터 요소 개수를 딕셔너리로 반환
+
+	c= Counter(text) # Counter 생성
+	c_element= list(Counter(text).elements()) # 요소들을 리스트 형태로 만듬
+	ck=Counter(red=4, blue=5) # 기본값을 설정, 단 red나 blue값은 문자열로 지정
+	a = Counter(['a', 'b', 'c', 'd', 'e'])
+	b = Counter(['a', 'b', 'a'])
+	print(a+b) # Counter끼리 덧셈 가능, 단 음수와 0 값은 나오지 않음
+	print(a-b) # Counter끼리 뺄셈 가능, 단 음수와 0 값은 나오지 않음
+	
+	
