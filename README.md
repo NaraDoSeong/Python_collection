@@ -35,4 +35,9 @@ OrderedDict # 순서가 있는 딕셔너리
 
 
 	od = OrderedDict() # OrderedDict을 선언
+	
+defaultdict # 키에 기본 값을 지정
+
+	dfd = defaultdict(lambda: 0) # defaultdict 선언, 기본값은 0
+	dfd_list = defaultdict(list) # defaultdict 선언, 기본값은 []
 		
