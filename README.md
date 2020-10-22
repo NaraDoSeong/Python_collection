@@ -60,10 +60,9 @@ namedtuple # 이름이 있는 튜플
 
 	
 	p3d = namedtuple("p3d", "x y z") # namedtuple 선언
-	"""
 	p3d = namedtuple("p3d", "x, y, z")
 	p3d = namedtuple("p3d", ['x', 'y', 'z'])
-	"""
+	
 	p4d= namedtuple("p1d", "x y z") # 이런식으로는X because? 헷갈림
 	
 	p1 = p3d(1, 2, 3) # p1에 네임드 튜플 대입
