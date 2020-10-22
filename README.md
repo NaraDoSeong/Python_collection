@@ -2,6 +2,7 @@
 Collection module
 
 deque # 스택과 큐 자료구조 제공, 연결 리스트의 특성을 지원
+
     from collections import deque
     dq_list = deque() # dg_list = deque([]) # deque를 선언 
 		dq_list.append(1)
