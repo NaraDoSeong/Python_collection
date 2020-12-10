@@ -1,4 +1,4 @@
-#openpyxl
+# openpyxl
 from openpyxl import Workbook
 
 wb = Workbook() # 워크북 열기
