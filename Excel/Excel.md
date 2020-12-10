@@ -1,8 +1,6 @@
 # openpyxl
 from openpyxl import Workbook
 
-wb = Workbook() # 워크북 열기
-
 기본
 
     wb = Workbook() # 워크북 열기
@@ -24,6 +22,7 @@ Sheet
 Value
 
     ws["locate"] = value # locate안에는 위치 A1, A2의 값을 넣고 value에는 입력할 값을 넣는다.
+    ws.cell(row, column, value= value) == (ws["locate"] = value)
     ws["locate"].value # 해당 locate에 값을 반환
     ws.cell(row, column).value == ws["locate"].value
     ws.cell(1, 1).value # A1의 값
