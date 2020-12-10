@@ -20,3 +20,14 @@ Sheet
     ws2 = wb.create_sheet("Test_Sheet2", 2) # index에 Sheet 생성
     new_ws = wb["Test_Sheet2"] # Dict 형태로 Sheet에 접근
     target = wb.copy_worksheet(new_ws) # new_ws Sheet 복사
+    
+Value
+
+    ws["locate"] = value # locate안에는 위치 A1, A2의 값을 넣고 value에는 입력할 값을 넣는다.
+    ws["locate"].value # 해당 locate에 값을 반환
+    ws.cell(row, column).value == ws["locate"].value
+    ws.cell(1, 1).value # A1의 값
+    ws.cell(1, 2).value # B1의 값
+    ws.cell(2, 1).value # A2의 값
+    # row = 1, 2, 3, 4 ...
+    # column = A(1), B(2), C(3), D(4) ...
