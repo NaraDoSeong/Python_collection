@@ -44,9 +44,15 @@ Value
     ws["B:C"] # column B부터 C의 값을 전부 가져옴
     ws["1:2"] # row 1부터 2의 값을 전부 가져옴
     
-     ws.iter_rows(min_row=1, max_row=10, min_col=1, max_col=3) # row 1~10까지 값중 colmnun 1~3인 값만 나열  
-     ws.iter_cols(min_row=1, max_row=10, min_col=1, max_col=3) # row 1~10까지 값중 colmnun 1~3인 값만 나열 
-     # 이때 rows는 가로로 한줄씩 가져오고 cols는 세로로 한줄씩 가져온다.
+    ws.iter_rows(min_row=1, max_row=10, min_col=1, max_col=3) # row 1~10까지 값중 colmnun 1~3인 값만 나열  
+    ws.iter_cols(min_row=1, max_row=10, min_col=1, max_col=3) # row 1~10까지 값중 colmnun 1~3인 값만 나열 
+    # 이때 rows는 가로로 한줄씩 가져오고 cols는 세로로 한줄씩 가져온다.
+     
+    ws.insert_rows(8) # 8번째 줄 생성
+    ws.insert_rows(8, 5) # 8번째 줄에 5개 줄 생성
+    
+    ws.insert_cols(2) # B번째 열 생성
+    ws.insert_cols(2, 3) # B번째 열에 3개 열 생성
 
 
     
