@@ -6,7 +6,7 @@ from openpyxl import Workbook
     wb = Workbook() # 워크북 열기
     wb.save("sample.xlsx") # 저장
     wb.close() # 닫기    
-    wb.sheetnames # 모든 Sheet 이름 확인 리스트 형으로 반환
+    wb.sheetnames # 모든 Sheet 이름 리스트 형으로 반환
     
 Sheet
 
@@ -30,3 +30,17 @@ Value
     ws.cell(2, 1).value # A2의 값
     # row = 1, 2, 3, 4 ...
     # column = A(1), B(2), C(3), D(4) ...
+    
+    ws.append(['first', 'second', 'third']) # 1줄씩 넣기
+    ws.max_column # 최대 cloumn 반환
+    ws.max_row # 최대 row 반환 
+    ws["B"].coordinate # 셀번호를 출력
+    
+    ws["B"] # column B의 값 모두 가져옴
+    ws["1"] # row 1의 값 모두를 한개씩 가져옴
+    ws["B:C"] # column B부터 C의 값을 전부 가져옴
+    ws["1:2"] # row 1부터 2의 값을 전부 가져옴
+  
+cell
+
+    
