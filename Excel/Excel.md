@@ -50,7 +50,6 @@ Value
      
     ws.insert_rows(8) # 8번째 줄 생성
     ws.insert_rows(8, 5) # 8번째 줄에 5개 줄 생성
-    
     ws.insert_cols(2) # B번째 열 생성
     ws.insert_cols(2, 3) # B번째 열에 3개 열 생성
 
