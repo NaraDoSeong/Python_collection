@@ -8,6 +8,9 @@ from openpyxl import Workbook
     wb.close() # 닫기    
     wb.sheetnames # 모든 Sheet 이름 리스트 형으로 반환
     
+    from openpyxl import load_workbook
+    wb = load_workbook("Samples.xlsx") # Samples.xlsx 파일을 읽어옴
+    
 Sheet
 
     ws1 = wb.active # 현재 활성화된 sheet 가져옴
@@ -40,7 +43,10 @@ Value
     ws["1"] # row 1의 값 모두를 한개씩 가져옴
     ws["B:C"] # column B부터 C의 값을 전부 가져옴
     ws["1:2"] # row 1부터 2의 값을 전부 가져옴
-  
-cell
+    
+     ws.iter_rows(min_row=1, max_row=10, min_col=1, max_col=3) # row 1~10까지 값중 colmnun 1~3인 값만 나열  
+     ws.iter_cols(min_row=1, max_row=10, min_col=1, max_col=3) # row 1~10까지 값중 colmnun 1~3인 값만 나열 
+     # 이때 rows는 가로로 한줄씩 가져오고 cols는 세로로 한줄씩 가져온다.
+
 
     
